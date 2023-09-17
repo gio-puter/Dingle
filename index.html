@@ -1,0 +1,71 @@
+<head>
+    <script type="module">
+        import {init} from "./wordgame.js";
+        import {checkInput} from "./wordgame.js";
+        import {stopInfo} from "./wordgame.js";
+        let lines = 0;
+//        let game;
+//        function init() {
+//            const canvas = document.getElementById('dvd');
+//            game = new Pong(canvas, keyMap);
+//            
+//            setInterval(update, 0);
+//        }
+//        
+//        function update() {
+//            game.mainLoop();
+//        }
+
+        // INIT FUNCTION ON LOAD
+        window.onload = init; 
+        
+        if (localStorage['hasPlayed']) {
+            const dict = JSON.parse(localStorage['userStats']);
+            lines = dict.lines;
+        }
+        
+//        const keyMap = {};
+        
+        function handleKeyPress(e) {
+            if (!document.getElementsByClassName('answer')[0]) { // PRESS TO SKIP INTRO
+                stopInfo();
+            } else { // REMOVE LISTENER, TAKE AND DISPLAY INPUT
+                document.removeEventListener("touchend", () => { if (!document.getElementsByClassName('answer')[0]) { stopInfo(); }}, false);
+                
+                let [validInput, result] = checkInput(document.getElementsByClassName('answer')[lines].innerHTML, e.key);
+                document.getElementsByClassName('answer')[lines].innerHTML = result;
+                
+                if (validInput) {
+                    lines += 1;
+                }
+            }
+            
+        }
+        
+        function handleKeyUp(e) {
+//            keyMap[e.key] = true;
+        }
+        
+        // PHONE TAP TO SKIP INTRO
+        window.addEventListener("touchend", () => {
+            if (!document.getElementsByClassName('answer')[0]) { 
+                stopInfo(); 
+            }
+        }, false);
+        
+        window.onkeydown = handleKeyPress;
+        window.onkeyup = handleKeyUp;
+        
+    </script>
+    <title>Dingle</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class='grainy'>
+        <div class='terminal'>
+            <main>
+            </main>
+        </div>
+    </div>
+</body>

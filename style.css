@@ -1,0 +1,174 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid;
+}
+
+.grainy::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .08;
+  background: url(https://www.rataalada.com/terminal/grain.gif);
+}
+
+.terminal {
+  position: fixed;
+  max-height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  padding-top: 1rem;
+  padding-bottom: 50vh;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  tab-size: 4;
+  box-sizing: border-box;
+}
+
+main {
+  line-height: 2.5rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-shadow: 1px 0px 1px;
+  text-align: start;
+  font-family: Source Code Pro, monospace;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: normal;
+  color: #f0fff0;
+  /*
+    display: flex;
+    flex-wrap: nowrap;
+*/
+}
+
+.flex {
+  display: flex;
+}
+
+:root {
+  background: #000;
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.userInput {
+  color: #25ff00;
+  /* rgb(38,255,0) */
+  text-shadow: 0 0 2px rgba(203, 254, 182, .7);
+  /*    color: coral;*/
+  /*    text-shadow: 0.1em;*/
+}
+
+.userArrow {
+  color: #ff7f50;
+  /*    color: #f88379;*/
+  text-shadow: 0 0 2px rgba(255, 208, 187, .7);
+}
+
+.retryResponse {
+  color: #ff0026;
+  /* rgb(255,0,38) */
+  text-shadow: 0 0 2px rgba(254, 203, 182, .7);
+  /*    color: red;*/
+}
+
+.guessResponse {
+  /*    color: green;*/
+  color: #25ff00;
+  /* rgb(38,255,0) */
+  text-shadow: 0 0 2px rgba(203, 254, 182, .7);
+}
+
+.winResponse,
+.info {
+  /*    color: white;*/
+  color: #f0fff0;
+  text-shadow: 0 0 2px rgba(235, 250, 235, .7);
+}
+
+.cursor {
+  animation: cursor 1.2s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0
+  }
+
+  60% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 1
+  }
+
+  81% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 0
+  }
+}
+
+.mobileCompatibility {
+  text-align: center;
+  padding: 5px;
+  color: #000;
+  text-transform: uppercase;
+  font-family: Source Code Pro, monospace;
+  background: linear-gradient(0deg, #25ff00, #6fb553);
+  border: 1px solid rgba(203, 254, 182, .1);
+  box-sizing: border-box;
+  box-shadow: 0 0 18px #6fb553;
+  border-radius: 3px;
+  position: relative;
+  transform: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+.inputBox {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Source Code Pro, monospace;
+  color: #000;
+}
+
+.inputArea {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.break {
+  height: 5px;
+  border-top: 5px dashed #f0fff0;
+  border-bottom: 5px dashed #f0fff0;
+  /*    width: 100%;*/
+  box-shadow: 0 0 2px rgba(235, 250, 235, .7);
+  position: absolute;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.showUserStats {
+  text-align: left;
+  color: #f0fff0;
+  text-shadow: 0 0 2px rgba(235, 250, 235, .7);
+}
