@@ -4,17 +4,6 @@
         import {checkInput} from "./wordgame.js";
         import {stopInfo} from "./wordgame.js";
         let lines = 0;
-//        let game;
-//        function init() {
-//            const canvas = document.getElementById('dvd');
-//            game = new Pong(canvas, keyMap);
-//            
-//            setInterval(update, 0);
-//        }
-//        
-//        function update() {
-//            game.mainLoop();
-//        }
 
         // INIT FUNCTION ON LOAD
         window.onload = init; 
@@ -23,8 +12,6 @@
             const dict = JSON.parse(localStorage['userStats']);
             lines = dict.lines;
         }
-        
-//        const keyMap = {};
         
         function handleKeyPress(e) {
             if (!document.getElementsByClassName('answer')[0]) { // PRESS TO SKIP INTRO
