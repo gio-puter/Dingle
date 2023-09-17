@@ -32,7 +32,8 @@ Do what you can and are able to do.
 1) Currently, the game only works with 6 letter guesses and secret words. I have already added arrays of four and five letter words. So, if possible, there should be a way on the webpage to switch between 4, 5, and 6 letter words whether it be through tabs or staged as EASY, MEDIUM, HARD. This would also require some additions to the localStorage dictionary.
 2) I think it would be cool to add some sort of leaderboard system whether its global or among friends.
 3) It might not be glamorous, but some of this code could definitely use some cleaning up. Any optimization would be greatly appreciated.
-4) Any suggestions as well
+4) Also not glamorous, but I haven't checked that all the words in the arrays are valid. So going through them and removing the bad ones would be great. And also removing ones that aren't reasonable to ask a normal person to know.
+5) Any ideas and extensions that you might have, I'd love to hear.
 
 
 Thank you
