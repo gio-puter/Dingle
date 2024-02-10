@@ -1,4 +1,4 @@
-# Dingle
+# [Dingle](https://dingle.glitch.me)
 ## History
 Dingle is a word game that I brainstormed and created in Python while on my 2022 spring break at Boston College.
 I shelved it, until the summer of 2023, since I struggled to convert my Python code to JavaScript and look pretty with HTML and CSS.
