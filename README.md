@@ -3,9 +3,13 @@
 Dingle is a word game that I brainstormed and created in Python while on my 2022 spring break at Boston College.
 I shelved it, until the summer of 2023, since I struggled to convert my Python code to JavaScript and look pretty with HTML and CSS.
 However, I eventually figured it out.
+
 The retro-terminal look produced by the CSS file was something I wanted to create since I wrote the original game on Replit which has that look in its console.
 But, I was actually able to create it with a lot of help from the source code of the 'rataalada' website that was created when 'The Batman' was released. (You can the Wayback Machine to take a look).
-But, there's still more that I want to do with this game.
+
+I left the game to stew until late February 2024 where I was inspired to learn more about web development. This included diving into React since that is the most popular and current method for front end development. Of course, I didn't know how to use the React library so I had to study it until I felt that enough studying was enough and that I needed to just learn from experience and mistakes. So I went to a familiar project to do this, which ending up being this one. Turns out, I retained much from studying and learned much more about the actual structure and layout of React through practice. So, now the website is built using the React library.
+
+Through using React, I was able to add other features that I had been wanting to include but couldn't figure out how to. I added a button that opened a notepad for the user (since the game can get difficult). I also added multiple levels so there are now options for 5-letter, 6-letter, and 7-letter secret words and localStorage handling for all of them. In the process, I also reconfigured the CSS to put all of these selections in a navigation bar in the header.
 
 ## How to play
 As you can probably tell, Dingle is heavily inspired by Wordle from its name to its goal.
@@ -29,11 +33,8 @@ First and foremost, any contributions and/or ideas are welcome.
 Just because an idea is here does NOT mean that you HAVE to do ALL of it.
 Do what you can and are able to do.
 
-1) Currently, the game only works with 6 letter guesses and secret words. I have already added arrays of four and five letter words. So, if possible, there should be a way on the webpage to switch between 4, 5, and 6 letter words whether it be through tabs or staged as EASY, MEDIUM, HARD. This would also require some additions to the localStorage dictionary.
-2) I think it would be cool to add some sort of leaderboard system whether its global or among friends.
-3) It might not be glamorous, but some of this code could definitely use some cleaning up. Any optimization would be greatly appreciated.
-4) Also not glamorous, but I haven't checked that all the words in the arrays are valid. So going through them and removing the bad ones would be great. And also removing ones that aren't reasonable to ask a normal person to know.
-5) Any ideas and extensions that you might have, I'd love to hear.
+1) I think it would be cool to add some sort of leaderboard system whether its global or among friends.
+2) Any ideas and extensions that you might have, I'd love to hear.
 
 
 Thank you
