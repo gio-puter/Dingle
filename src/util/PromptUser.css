@@ -1,0 +1,26 @@
+@import '../variables.css';
+
+.userInput {
+    color: var(--userColor);
+    text-shadow: 0 0 var(--shadowBlur) var(--userShadow);
+}
+  
+.cursor {
+    animation: cursor 1.2s infinite;
+}
+  
+@keyframes cursor {
+    0% {opacity: 0}
+    60% {opacity: 1}
+    80% {opacity: 1}
+    81% {opacity: 0}
+    100% {opacity: 0}
+}
+  
+@-webkit-keyframes cursor {
+    0% {opacity: 0}
+    60% {opacity: 1}
+    80% {opacity: 1}
+    81% {opacity: 0}
+    100% {opacity: 0}
+}

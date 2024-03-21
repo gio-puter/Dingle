@@ -1,0 +1,48 @@
+@import '../variables.css';
+
+.draggable-textbox {
+    position: absolute;
+    border: 1px solid lime;
+    overflow: hidden;
+    user-select: none;
+    z-index: 2;
+}
+
+.draggable-textbox.dragging {
+    cursor: grab;
+}
+
+.resize-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: lime;
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+    z-index: 2;
+}
+
+.content {
+    padding: 10px;
+    background-color: black;
+    padding: 2em 0.5em 0.5em 0.5em;
+    outline: none;
+    color: lime;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    text-shadow: 0 0 2px var(--validShadow);
+    z-index: inherit;
+}
+
+.drag-handle {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    cursor: grab;
+    top: 0;
+    z-index: inherit;
+}

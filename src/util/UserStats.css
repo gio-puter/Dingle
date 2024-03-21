@@ -1,0 +1,41 @@
+@import '../variables.css';
+
+hr {
+    height: 5px;
+    width: 100%;
+    border-top: 5px dashed #f0fff0;
+    border-bottom: 5px dashed #f0fff0;
+    position: relative;
+    left: 0;
+  
+    animation: widen 2s;
+    animation-iteration-count: 1;
+}
+
+.userStats {
+    margin-top: 1em;
+    display:flex;
+    flex-direction: row;
+}
+  
+.userStats div {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+  
+.userStats p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+@keyframes widen {
+    0% {width: 0%};
+    100% {width: 100%};
+}
+  
+@-webkit-keyframes widen {
+    0% {width: 0%};
+    100% {width: 100%};
+}

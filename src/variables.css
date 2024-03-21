@@ -1,0 +1,9 @@
+:root {
+    --shadowBlur: 3px;
+    --userColor: orange;
+    --userShadow: orange;
+    --validColor: lime;
+    --validShadow: lime;
+    --invalidColor: crimson /* #ff0026, crimson */;
+    --invalidShadow: crimson /*rgba(254, 203, 182, .7), crimson */;
+}

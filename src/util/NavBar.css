@@ -1,0 +1,71 @@
+@import '../variables.css';
+
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5em;
+    z-index: 1;
+    background: orange;
+    color: black;
+}
+
+.navBar button {
+    padding: 0;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    width: 20%;
+    height: inherit;
+    border-right: 1px solid black;
+    background: inherit;
+    color: inherit;
+    font-weight: 600;
+    font-family: Source Code Pro, monospace;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.navBar button:last-child{
+    width: 10%;
+    border-right: none;
+    float:right;
+}
+
+.navBar button:hover:not(.active):not(.won) {
+    background: rgb(251, 176, 36);
+}
+
+.navBar button:last-child:active {
+    background: lime !important;
+}
+
+.navBar button.active {
+    background: lime;
+}
+
+.navBar button.won {
+    background: rgb(18, 137, 18);
+    color: lime;
+}
+
+.navBar button.won:hover {
+    background: rgb(33, 169, 33);
+}
+
+.navBar button span:after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f00c";
+    position: absolute;
+    color: lime;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navBar button.won span:after {
+    position: relative;
+    opacity: 1;
+    padding-left: 5px;
+}
